@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kendo Kata</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <!-- iPad/iPhone specific css below, add after your main css >
+	<link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="ipad.css" type="text/css" />		
+	<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css" type="text/css" />		
+	-->
+    <!-- If your application is targeting iOS BEFORE 4.0 you MUST put json2.js from http://www.JSON.org/json2.js into your www directory and include it here -->
+
+    <link rel="stylesheet" href="scripts/jquery.mobile-1.0.min.css" />
+    <link href="scripts/custom-icon.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="scripts/jquery-1.7.1.min.js" ></script>
+    <script type="text/javascript" src="scripts/jquery.mobile-1.0.min.js" ></script>
+    <script type="text/javascript" charset="utf-8" src="scripts/phonegap-1.3.0.js"></script>
+
+
+  </head>
+  <body>
+
+    <div data-role="page" id="kata">
+
+      <div data-role="header" data-theme="b" >
+        <h1>Kendo Kata (剣道型）</h1>
+
+      </div>
+      <!-- /header -->
+
+      <div data-role="content">
+
+
+        <ul data-role="listview" data-inset="true" data-filter="true">
+          <li data-role="list-divider">Tachi kata:</li>
+          <li>
+            <a href="#ippon">1. Ippon-me</a>
+          </li>
+          <li>
+            <a href="#nihon">2. Nihon-me</a>
+          </li>
+          <li>
+            <a href="#sanbon">3. Sanbon-me</a>
+          </li>
+          <li>
+            <a href="#yonhon">4. Yonhon-me</a>
+          </li>
+          <li>
+            <a href="#gohon">5. Gohon-me</a>
+          </li>
+          <li>
+            <a href="#roppon">6. Roppon-me</a>
+          </li>
+          <li>
+            <a href="#nanahon">7. Nanahon-me</a>
+          </li>
+          <li data-role="list-divider">Kodachi kata:</li>
+          <li>
+            <a href="#kippon">1. Ippon-me</a>
+          </li>
+          <li>
+            <a href="#knihon">2. Nihon-me</a>
+          </li>
+          <li>
+            <a href="#ksanbon">3. Sanbon-me</a>
+          </li>
+
+        </ul>
+
+
+      </div>
+      <!-- /content -->
+
+
+      <div data-role="footer" data-id="navbar" class="nav-custom-icon" data-position="fixed">
+        <div data-role="navbar" class="nav-custom-icon" data-grid="b">
+          <ul>
+            <li>
+              <a href="index.html" rel="external" data-prefetch="true" id="kendonavbar" data-icon="custom" >Kendo</a>
+            </li>
+            <li>
+              <a href="kata.html" rel="external" data-prefetch="true" id="katanavbar" data-icon="custom" class="ui-btn-active ui-state-persist">Kata</a>
+            </li>
+            <li>
+              <a href="Option.html" rel="external" data-prefetch="true" id="optionnavbar" data-icon="custom">Option</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+
+
+      <!-- /footer -->
+
+    </div>
+    <!-- /page -->
+
+
+    <!-- Start of 1 page: #ippon -->
+    <div data-role="page" id="ippon" data-theme="a">
+
+      <div data-role="header">
+        <h1>Ippon Me</h1>
+        <a href="kata.html" rel="external" data-icon="home" data-iconpos="notext" data-direction="reverse" data-rel="home"  class="ui-btn-right jqm-home">Home</a>
+      </div>
+      <!-- /header -->
+
+      <div data-role="content" data-theme="a">
+        <h2>Ippon Me 一本目</h2>
+        <p>
+          In Ippon-me kata, the uchitachi is in left jodan while the shidachi
+          is in right jodan. Both partners advance 3 large steps to the middle.
+          The uchitachi strikes a deep men. The shidachi steps back (nuki-waza),
+          raising the arms out of the way and then steps inward striking the uchitachi's
+          shomen.
+        </p>
+        <p>
+          The uchitachi then steps backwards a small step and the shidachi'slowers
+          his sword to the center of the uchitachi's face. The shidachi steps
+          back one more small step and the shidachi steps forward into left jodan
+          exhibiting zanshin.
+        </p>
+        <p>
+          The shidachi then steps backwards to chudan kamae as the uchitachi
+          resumes chudan kamae. Uchitachi leads to kamae toku and the shidachi
+          simultaneously follows.
+        </p>
+
+        <div data-role="collapsible" >
+          <h3>
+            For the Uchitachi
+
+          </h3>
+          <p>
+            <ul>
+              <li>Always look at the shidachi's eyes. </li>
+              <li>The men should be fast strong and must circle out and down. </li>
+              <li>
+                The men cut should stop slightly below the gedan kamae level.
+              </li>
+              <li>
+                Uchitachi must set the pace and tempo of the kata, the shidachi
+                must never move before you, therefore be sure to set the timing
+                for each action clearly.
+              </li>
+            </ul>
+          </p>
+        </div>
+
+        <div data-role="collapsible" >
+          <h3>
+            For the Shidachi
+          </h3>
+          <p>
+            <ul>
+              <li>Make your nuki men with the legs, the body and the arms. </li>
+              <li>
+                When you come back in to hit the uchitachi's men move both feet,
+                not just the leading foot.
+              </li>
+              <li>
+                When the uchitachi takes his first step backwards, move the kissaki
+                down to the center of the uchitachi's face. The uchitachi makes
+                this move backwards and you move the sword simultaneously. Do not
+                move prior to the uchitachi
+              </li>
+              <li>
+                When you move to jodan as the uchitachi takes the second step
+                back, move forward with the feeling of thrusting at the eyes and
+                then go to jodan with the feeling that if the uchitachi takes one
+                more step you'll hit immediately.
+              </li>
+              <li>
+                Shidachi will never move before the uchitachi. The uchitachi will
+                move first and then the shidachi will move simultaneously.
+              </li>
+            </ul>
+          </p>
+        </div>
+
+        <p>
+          <a href="#ipponvideo" data-role="button" data-rel="dialog" data-transition="pop" data-theme="e" >Watch Video</a>
+        </p>
+
+        <p>
+          <a href="#kata" data-direction="reverse" data-role="button" data-theme="b">Back</a>
+        </p>
+
+      </div>
+      <!-- /content -->
+
+      <div data-role="footer">
+        <h4>&copy; 2012 Far East Gadget.com</h4>
+      </div>
+      <!-- /footer -->
+    </div>
+    <!-- /page ippon -->
+
+    <!-- Start of ipponvideo page: #popup -->
+    <div data-role="page" id="ipponvideo">
+
+      <div data-role="header" data-theme="e">
+        <h1>Ippon Me video</h1>
+      </div>
+      <!-- /header -->
+
+      <div data-role="content" data-theme="d">
+
+       
+          
+          <video id="video" autobuffer height="212" width="270" >
+              <source src="http://home.fareastgadget.com/kendovideo/kata1.mp4">
+              </source>
+          </video>
+        
+
+      </div>
+      <!-- /content -->
+
+    </div>
+    <!-- /page popup -->
+
+
+    <!-- Start of 2 page: #nihon -->
+    <div data-role="page" id="nihon" data-theme="a">
+
+      <div data-role="header">
+        <h1>Nihon Me</h1>
+        <a href="kata.html" rel="external" data-icon="home" data-iconpos="notext" data-direction="reverse" data-rel="home"  class="ui-btn-right jqm-home">Home</a>
+      </div>
+      <!-- /header -->
+
+      <div data-role="content" data-theme="a">
+        <h2>Nihon Me 二本目</h2>
+        <p>
+          In this kata, both participants are in chudan no kamae. After taking
+          three large steps forward and searching for a chance to strike, the uchitachi
+          cuts to the shidachi's kote.
+        </p>
+        <p>
+          The shidachi responds by stepping diagonally backwards to the left,
+          lowering the sword out of the way of the cut. The shidachi then steps
+          back in cutting a large kote to the uchitachi.
+        </p>
+        <p>
+          After the shidachi demonstrates zanshin, the uchitachi steps backwards
+          from the left foot returning to the position from which kote was struck
+          and simultaneously, the shidachi steps from the left foot to the right
+          back to the center. The uchitachi leads to kamae toku and the shidachi
+          simultaneously follows.
+        </p>
+        <div data-role="collapsible" >
+          <h3>
+            For the Uchitachi
+
+          </h3>
+          <p>
+            <ul>
+              <li> Only cut just below the level of the shidachi's right hand. </li>
+              <li>
+                You will lead the zanshin timing, but the shidachi will follow at
+                the same time.
+              </li>
+            </ul>
+          </p>
+        </div>
+        <div data-role="collapsible" >
+          <h3>
+            For the Shidachi
+
+          </h3>
+          <p>
+            <ul>
+              <li>
+                Shidachi must step backwards and diagonally to the left. During
+                the step, the body facing changes to stay pointed towards the uchitachi
+              </li>
+              <li>
+                The shidachi should draw a half circle with the sword during the
+                nuki action.
+              </li>
+              <li>
+                When going up for the swing, make sure that the sword does not go
+                past the half circle end point (e.g. not to the right of center).
+              </li>
+              <li>
+                Make a complete step when hitting the uchitachi's kote, don't just
+                step with the right foot.
+              </li>
+              <li>Don't open your body prior to the uchitachi's cut. </li>
+              <li>
+                At zanshin, the spirit should be that of going to the uchitachi's
+                chest, but there is no actual physical action in that direction.
+              </li>
+              <li>
+                Let the uchitachi lead the timing of the zanshin but you should
+                be simultaneous with that lead.
+              </li>
+            </ul>
+          </p>
+        </div>
+
+
+        <p>
+          <a href="#nihonvideo" data-role="button" data-rel="dialog" data-transition="pop" data-theme="e" >Watch Video</a>
+        </p>
+        <p>
+          <a href="#kata" data-direction="reverse" data-role="button" data-theme="b">Back</a>
+        </p>
+
+      </div>
+      <!-- /content -->
+
+      <div data-role="footer">
+        <h4>&copy; 2012 Far East Gadget.com</h4>
+      </div>
+      <!-- /footer -->
+    </div>
+    <!-- /page nihon -->
+
+    <!-- Start of nihon video page: #popup -->
+    <div data-role="page" id="nihonvideo">
+
+      <div data-role="header" data-theme="e">
+        <h1>Nihon Me video</h1>
+      </div>
+      <!-- /header -->
+
+      <div data-role="content" data-theme="d">
+
+           <video id="video" autobuffer height="212" width="270" >
+              <source src="http://home.fareastgadget.com/kendovideo/kata2.mp4">
+              </source>
+          </video>
+      </div>
+      <!-- /content -->
+
+    </div>
+    <!-- /page popup -->
+
+
+    <!-- Start of 3 page: #sanbon -->
+    <div data-role="page" id="sanbon" data-theme="a">
+
+      <div data-role="header">
+        <h1>Sanbon Me</h1>
+        <a href="kata.html" rel="external" data-icon="home" data-iconpos="notext" data-direction="reverse" data-rel="home"  class="ui-btn-right jqm-home">Home</a>
+      </div>
+      <!-- /header -->
+
+      <div data-role="content" data-theme="a">
+        <h2>Sanbon Me 三本目</h2>
+
+        <p>
+          In this kata both participants take gedan-no-kamae. Both parties move
+          to the center with three large steps.
+        </p>
+        <p>
+          Once in the center the uchitachi begins to raise the sword towards chudan
+          and the shidachi follows simultaneously. The uchitachi looks for an opportunity
+          and when he finds it thrusts tsuki to the shidachi's suigetsu. The suigetsu
+          is the point just below the sternum.
+        </p>
+        <p>
+          The shidachi turns the sword blade out to the right and, using the shinogi,
+          steps back drawing the uchitachi's sword down and to the right using the
+          technique iyasu. The shidachi then thrusts to the uchitachi's chest. The
+          uchitachi steps back with the right foot and parries on the left side
+          of the sword.
+        </p>
+        <p>
+          The shidachi thrusts again using the whole body but not the arms. This
+          action has the spirit of tsuki but is not really tsuki. It leads into
+          the section which follows. The uchitachi again parries, this time on the
+          right side of the sword. The shidachi then chases the uchitachi down two
+          or three steps to the uchitachi's rear.
+        </p>
+        <p>
+          At the end of this chase, shidachi's sword is in the center of the uchitachi's
+          face. After the shidachi shows zanshin, the two return to the center in
+          chudan-no-kamae.
+        </p>
+
+        <div data-role="collapsible" >
+          <h3>
+            For the Uchitachi
+
+          </h3>
+          <p>
+            <ul>
+              <li>
+                Make sure your tsuki is to just below the sternum of the shidachi
+                not the throat or chest.
+              </li>
+              <li>Do not raise your left fist during the thrust. </li>
+              <li>
+                At the point of the shidachi's first thrust, the level of the sprit
+                should be 50-50 At the point of the shidachi's second thrust, the
+                level of the spirit should be 60-40 in favor of the shidachi.
+              </li>
+              <li>
+                As you parry the shidachi, at the end of each parry, the kissaki
+                should point to the shidachi's throat.
+              </li>
+              <li>
+                All of the parries of the thrusts should be made with the shinogi
+                at the depth of the your mono-uchi.
+              </li>
+              <li>
+                The Uchitachi will need to turn the body facing away from square
+                on each parry. Do not turn as far as hanmi (half turned). On the first
+                parry, you face slightly to the right (the right shoulder pulled back.
+                On the second one the facing points left (the left shoulder pulled
+                back).
+              </li>
+            </ul>
+          </p>
+        </div>
+        <div data-role="collapsible" >
+          <h3>
+            For the Shidachi
+
+          </h3>
+          <p>
+            <ul>
+              <li>
+                At the point of the shidachi's first thrust, the level of the spirit
+                should be 50-50 between the uchitachi and the shidachi. At the point
+                of the shidachi's second thrust, the level of the spirit should be 60-40
+                in favor of the shidachi.
+              </li>
+              <li>
+                In countering the Uchitachi's thrust:
+                <ul>
+                  <li>
+                    Don't turn your left wrist outside, but keep it broken in. If
+                    you point your left wrist to the outside, it will become dead.
+                  </li>
+                  <li>Squeeze the sword as you receive the tsuki (Shibori). </li>
+                  <li>
+                    Start with a relatively loose grip which tightens as you receive.
+                  </li>
+                </ul>
+              </li>
+              <li>Your thrusts should be directed to the uchitachi's chest.</li>
+              <li>
+                The second thrust is done with the spirit of tsuki but is not actually
+                a full tuski. It leads into the section that follows (the chase).
+              </li>
+              <li>
+                The chase part should move at a faster pace than the tsuki part. In
+                the tsuki part give yourself time to "complete" each tsuki.
+              </li>
+              <li>The blade does not tilt during the tsuki.</li>
+            </ul>
+          </p>
+        </div>
+        <p>
+          <a href="#sanbonvideo" data-role="button" data-rel="dialog" data-transition="pop" data-theme="e" >Watch Video</a>
+        </p>
+        <p>
+          <a href="#kata" data-direction="reverse" data-role="button" data-theme="b">Back</a>
+        </p>
+
+      </div>
+      <!-- /content -->
+
+      <div data-role="footer">
+        <h4>&copy; 2012 Far East Gadget.com</h4>
+      </div>
+      <!-- /footer -->
+    </div>
+    <!-- /page sanbon -->
+
+    <!-- Start of sanbon video page: #popup -->
+    <div data-role="page" id="sanbonvideo">
+
+      <div data-role="header" data-theme="e">
+        <h1>Sanbon Me video</h1>
+      </div>
+      <!-- /header -->
+
+      <div data-role="content" data-theme="d">
+
+            <video id="video" autobuffer height="212" width="270" >
+              <source src="http://home.fareastgadget.com/kendovideo/kata3.mp4">
+              </source>
+          </video>
+      </div>
+      <!-- /content -->
+
+    </div>
+    <!-- /page popup -->
+
+    <!-- Start of 4 page: #yonhon -->
+    <div data-role="page" id="yonhon" data-theme="a">
+
+      <div data-role="header">
+        <h1>Yonhon Me</h1>
+        <a href="kata.html" rel="external" data-icon="home" data-iconpos="notext" data-direction="reverse" data-rel="home"  class="ui-btn-right jqm-home">Home</a>
+      </div>
+      <!-- /header -->
+
+      <div data-role="content" data-theme="a">
+        <h2>Yonhon Me 四本目</h2>
+        <p>
+          The uchitachi steps forward into Hasso-no-kamae. The shidachi steps
+          back into Waki gamae. Both move in three steps (not so large as usual).
+        </p>
+        <p>
+          The uchitachi sees the opportunity and moves through Jodan to cut the
+          shidachi's men. The shidachi responds simultaneously by moving through
+          Jodan and also cutting to the men. Both strike simultaneously (aiuchi)
+          stepping forward with the right foot. The two swords wedge in the center
+          of the cut and stop.
+        </p>
+        <p>
+          Both parties lower the sword back to chudan kamae in good distance (see
+          below). The uchitachi then thrusts to the right lung of the shidachi.
+        </p>
+        <p>
+          The shidachi steps forward and to the left with the left foot. The shidachi
+          raises the left and right hands high above the head leaving the sword
+          blade pointing back and point downwards (Maki-kaeshi). As the shidachi
+          completes his step by placing the right foot behind the left, he moves
+          the sword over the center of his head and strikes the uchitachi's shomen.
+        </p>
+        <p>
+          Exhibit zanshin, and then as the uchitachi steps backwards one step,
+          the shidachi draws the sword down to eye level and steps back to the center
+          line (right foot, then left foot), and chudan kamae.
+        </p>
+
+        <div data-role="collapsible" >
+          <h3>
+            For the Uchitachi
+
+          </h3>
+          <p>
+            <ul>
+              <li>
+                Hasso-no-kamae should feel just like hidari-Jodan, however the right
+                fist should be down towards the right shoulder and the tsuba should
+                be even with the mouth. The tsuba should be one fist to the right
+                of the mouth. To make this kamae, step forwards with the right foot
+                to Jodan and then slowly lower to Hasso.
+              </li>
+              <li>
+                Make certain your three steps to the center are quite a bit smaller
+                than the usual three steps.
+              </li>
+              <li>
+                The ai-uchi cut is delivered from a far distance (to-ma) where you
+                see a chance and must act on it immediately.
+              </li>
+              <li>
+                As you go through Jodan to the ai-uchi cut, your jodan should be
+                only 'tall' enough to allow you to view the Shidachi under your arms.
+              </li>
+              <li>
+                The cut for men should feel huge not small (just like Ippon-me),
+                both arms must be fully extended at the end of the cut.
+              </li>
+              <li>
+                Since the cut is huge, and the distance is large, you must finish
+                the cut completely extended. You must be very careful about the distance
+                from which you make the cut and the distance you move in during the
+                cut.
+              </li>
+              <li>
+                As you lower to chudan after ai-uchi, feel like the shinogi of the
+                swords will be scraping each other.
+              </li>
+              <li>
+                If as you lower to chudan, you feel the distance is too close, you
+                may adjust backwards to proper ma- ai.
+              </li>
+              <li>
+                Your tsuki should be to the uchitachi's right lung (your left side).
+              </li>
+              <li>
+                For the tsuki, slant your blade slightly by turning your right palm
+                on top a bit.
+              </li>
+              <li>During the tsuki, look into the shidachi's face. </li>
+              <li>
+                After the maki kaeshi is applied to your thrust, your kissaki will
+                droop a bit.
+              </li>
+              <li>
+                You must lead the way back to chudan. Do not wait for the shidachi
+                to move.
+              </li>
+              <li>
+                Step back to ai-chudan first with your left and then your right
+                foot.
+              </li>
+            </ul>
+          </p>
+        </div>
+        <div data-role="collapsible" >
+          <h3>
+            For the Shidachi
+
+          </h3>
+          <p>
+            <ul>
+              <li>
+                In Waki-gamae, the point of your sword should be slightly lower
+                than gedan. Your body facing is hidari hanmi (left shoulder half turned
+                forward). The cutting edge should be diagonally downward to the right.
+              </li>
+              <li>
+                Make certain your three steps to the center are quite a bit smaller
+                than the usual three steps.
+              </li>
+              <li>As you move, don't let the shidachi see your sword. </li>
+              <li>
+                The ai-uchi cut is delivered from a far distance (to-ma) where you
+                see a chance and must act on it immediately.
+              </li>
+              <li>
+                The cut for men should feel huge not small (like Ippon-me), both
+                arms must be fully extended at the end of the cut.
+              </li>
+              <li>
+                As you lower to chudan after ai-uchi, feel like the shinogi of the
+                swords will be scraping each other.
+              </li>
+              <li>
+                Do not adjust the distance as you go down into chudan. Only the
+                uchitachi may move to adjust distance at this point in time.
+              </li>
+              <li>
+                In the maki-kaeshi, make sure that the blade is pointing to the
+                rear.
+              </li>
+              <li>
+                Make the maki-kaeshi very large by raising the left fist high over
+                your head.
+              </li>
+              <li>The zanshin is like nihon-me feeling, but not motion. </li>
+              <li>
+                As you step towards chudan, draw down to chudan through the uchitachi's
+                eyes.
+              </li>
+              <li>
+                Wait for the uchitachi to begin stepping back before you go back
+                to chudan. The uchitachi leads the way and you move simultaneously.
+              </li>
+              <li>Step back to chudan with right and then left foot. </li>
+              <li>Keep Zanshin until you both return to chudan.</li>
+            </ul>
+          </p>
+        </div>
+        <p>
+          <a href="#yonhonvideo" data-role="button" data-rel="dialog" data-transition="pop" data-theme="e" >Watch Video</a>
+        </p>
+        <p>
+          <a href="#kata" data-direction="reverse" data-role="button" data-theme="b">Back</a>
+        </p>
+
+      </div>
+      <!-- /content -->
+
+      <div data-role="footer">
+        <h4>&copy; 2012 Far East Gadget.com</h4>
+      </div>
+      <!-- /footer -->
+    </div>
+    <!-- /page yonhon -->
+
+    <!-- Start of yonhon video page: #popup -->
+    <div data-role="page" id="yonhonvideo">
+
+      <div data-role="header" data-theme="e">
+        <h1>Yonhon Me video</h1>
+      </div>
+      <!-- /header -->
+
+      <div data-role="content" data-theme="d">
+
+         <video id="video" autobuffer height="212" width="270" >
+              <source src="http://home.fareastgadget.com/kendovideo/kata4.mp4">
+              </source>
+          </video>
+      </div>
+      <!-- /content -->
+
+    </div>
+    <!-- /page popup -->
+
+    <!-- Start of 5 page: #gohon -->
+    <div data-role="page" id="gohon" data-theme="a">
+
+      <div data-role="header">
+        <h1>Gohon Me</h1>
+        <a href="kata.html" rel="external" data-icon="home" data-iconpos="notext" data-direction="reverse" data-rel="home"  class="ui-btn-right jqm-home">Home</a>
+      </div>
+      <!-- /header -->
+
+      <div data-role="content" data-theme="a">
+        <h2>Gohon Me 五本目</h2>
+        <p>
+          In this kata, uchitachi takes left jodan. The shidachi raises the chudan
+          to point to the uchitachi's left fist or kote. Both parties take three
+          big steps to the center and look for an opportunity.
+        </p>
+        <p>
+          The uchitachi strikes towards the shidachi's shomen. The shidachi steps
+          back and executes suri-age, stepping back in to strike the uchitachi's
+          men.
+        </p>
+        <p>
+          Next the shidachi steps back. First drawing the sword down to the uchitachi's
+          eyes and then immediately up to left jodan (step is left right left-recover).
+        </p>
+        <p>
+          As the uchitachi begins to come back to chudan, the shidachi steps back
+          again into chudan. Both parties take three small steps to return to the
+          center (uchitachi starts with left, shidachi with right foot).
+        </p>
+
+        <div data-role="collapsible" >
+          <h3>
+            For the Uchitachi
+
+          </h3>
+          <p>
+            <ul>
+              <li>
+                Your cut should feel like it will cut to the depth of the shidachi's
+                chin.
+              </li>
+              <li>
+                Do not feel like you're cutting the shidachi's sword. Make sure
+                you cut to the men.
+              </li>
+              <li>
+                At the point in time where the shidachi's suri-age is applied to
+                your sword. Your sword dies falling to your right and downwards.
+              </li>
+              <li>
+                After reaching ai-chudan again, lead the way back to the center
+                with exactly three steps.
+              </li>
+            </ul>
+          </p>
+        </div>
+        <div data-role="collapsible" >
+          <h3>
+            For the Shidachi
+
+          </h3>
+          <p>
+            <ul>
+              <li>
+                In your kamae, do not angle the blade to the right but keep it
+                pointing downwards (although the point will be out of center.
+              </li>
+              <li>
+                Be sure that your suri-age waza contacts the uchitachi's sword above
+                the level of your head.
+              </li>
+              <li>
+                Don't raise the sword too far back as you continue your suri-age
+                into the back swing. The proper height is just high enough so that
+                you can see your partner below and between your arms. If you swing
+                too far back, then your grip and cutting will become too soft.
+              </li>
+              <li>
+                The pull back towards the Jodan zanshin goes through the center
+                of the uchitachi's face, to the same point as for Ippon-me.
+              </li>
+              <li>Return to the center with exactly 3 steps.</li>
+            </ul>
+          </p>
+        </div>
+        <p>
+          <a href="#gohonvideo" data-role="button" data-rel="dialog" data-transition="pop" data-theme="e" >Watch Video</a>
+        </p>
+        <p>
+          <a href="#kata" data-direction="reverse" data-role="button" data-theme="b">Back</a>
+        </p>
+
+      </div>
+      <!-- /content -->
+
+      <div data-role="footer">
+        <h4>&copy; 2012 Far East Gadget.com</h4>
+      </div>
+      <!-- /footer -->
+    </div>
+    <!-- /page gohon -->
+
+    <!-- Start of gohon video page: #popup -->
+    <div data-role="page" id="gohonvideo">
+
+      <div data-role="header" data-theme="e">
+        <h1>Gohon Me video</h1>
+      </div>
+      <!-- /header -->
+
+      <div data-role="content" data-theme="d">
+
+        <video id="video" autobuffer height="212" width="270" >
+              <source src="http://home.fareastgadget.com/kendovideo/kata5.mp4">
+              </source>
+          </video>
+      </div>
+      <!-- /content -->
+
+    </div>
+    <!-- /page popup -->
+
+    <!-- Start of 6 page: #roppon -->
+    <div data-role="page" id="roppon" data-theme="a">
+
+      <div data-role="header">
+        <h1>Roppon Me</h1>
+        <a href="kata.html" rel="external" data-icon="home" data-iconpos="notext" data-direction="reverse" data-rel="home"  class="ui-btn-right jqm-home">Home</a>
+      </div>
+      <!-- /header -->
+
+      <div data-role="content" data-theme="a">
+        <h2>Roppon Me 六本目</h2>
+        <p>
+          Uchitachi takes chudan kamae. The shidachi takes gedan kamae. Both take
+          three steps to the center.
+        </p>
+        <p>
+          At the center, the shidachi raises the sword point towards chudan looking
+          for an opportunity to attack. the uchitachi attempts unsuccessfully to
+          hold the shidachi's blade down.
+        </p>
+        <p>
+          When it becomes clear that the shidachi will be able to come up into
+          a dangerous position, the uchitachi steps back into left jodan. The shidachi
+          pursues pointing the kissaki towards the uchitachi's left fist.
+        </p>
+        <p>
+          This pressure forces the uchitachi to step back again into chudan. The
+          shidachi adjusts kamae back to chudan but does not step in again.
+        </p>
+        <p>
+          At this point, the uchitachi cuts a small kote. The shidachi counters
+          with suri-age kote, stepping to the left (left foot then right foot).
+        </p>
+        <p>
+          The Uchitachi steps back diagonally to his left. The shidachi follows
+          stepping forward with his left foot and then assuming left jodan kamae.
+          Shidachi exhibits zanshin. The shidachi then steps back (right foot, left
+          foot) to the center (diagonally back to the left), and the uchitachi returns
+          to the center (right foot, left foot) as well (diagonally forward to the
+          right).
+        </p>
+
+        <div data-role="collapsible" >
+          <h3>
+            For the Uchitachi
+
+          </h3>
+          <p>
+            <ul>
+              <li>
+                In your initial kamae, do not lower the sword to respond to the
+                shidachi's move to gedan.
+              </li>
+              <li>
+                As the shidachi comes up towards chudan you now lower a bit to try
+                to hold this move down.
+              </li>
+              <li>
+                The movement up to Jodan and back down to Chudan should be done
+                rather quickly due to the seme pressure applied by the shidachi.
+              </li>
+              <li>
+                Just as you do for Gohon-me, cut the kote straight down to just
+                below the wrist. At the point in time where the shidachi applies the
+                suri-age waza, your sword dies and falls off down to your left.
+              </li>
+              <li>
+                You must lead the move to zanshin. Do not wait for the shidachi
+                to push you back.
+              </li>
+              <li>
+                After your kote is hit, when you step backwards do not turn your
+                body facing towards the shidachi, but instead straight forward. This
+                will mean that your chest will be angled so that the left shoulder
+                is somewhat further away from the shidachi's body than your right
+                shoulder.
+              </li>
+              <li>
+                After you have moved backwards following the shidachi's strike to
+                your kote, the point of your sword will be a bit to the left and the
+                blade will be a bit to the right of vertical since your sword is still
+                dead.
+              </li>
+            </ul>
+          </p>
+        </div>
+        <div data-role="collapsible" >
+          <h3>
+            For the Shidachi
+
+          </h3>
+          <p>
+            <ul>
+              <li>
+                As you come up from gedan to chudan, your seme should be directed
+                between the fists of the uchitachi.
+              </li>
+              <li>
+                When the shidachi steps back to Jodan immediately pursue and assume
+                the same kamae that you do in Gohon-me (point of sword pointing to
+                left fist, but blade straight up and down).
+              </li>
+              <li>
+                Do the suri-age by drawing a small counterclockwise semi-circle
+                to the right with your sword.
+              </li>
+              <li>
+                Make certain that your waza is suri-age and not harai. In particular,
+                do not beat the uchitachi's sword downward, but use the semi-circle
+                to stroke it upwards.
+              </li>
+              <li>
+                Make sure that in following from the suri-age to the kote you do
+                not make too large a motion. This is a small kote, and you should
+                always see the uchitachi from above your arms rather than below and
+                between your arms as in other kata.
+              </li>
+              <li>
+                The Uchitachi leads the timing for zanshin by stepping backwards.
+                You must simultaneously follow feel like you thrust to the Uchitachi's
+                face prior to assuming Jodan.
+              </li>
+              <li>
+                At the time when you do the Jodan/zanshin, your left heel is at
+                the original center line (front to back center line where the swords
+                originally crossed).
+              </li>
+              <li>
+                Following the Jodan/zanshin, step back to the original position
+                from first your right foot and then your left foot, finally recovering
+                your right foot.
+              </li>
+            </ul>
+          </p>
+        </div>
+        <p>
+          <a href="#ropponvideo" data-role="button" data-rel="dialog" data-transition="pop" data-theme="e" >Watch Video</a>
+        </p>
+        <p>
+          <a href="#kata" data-direction="reverse" data-role="button" data-theme="b">Back</a>
+        </p>
+
+      </div>
+      <!-- /content -->
+
+      <div data-role="footer">
+        <h4>&copy; 2012 Far East Gadget.com</h4>
+      </div>
+      <!-- /footer -->
+    </div>
+    <!-- /page roppon -->
+
+
+    <!-- Start of roppon video page: #popup -->
+    <div data-role="page" id="ropponvideo">
+
+      <div data-role="header" data-theme="e">
+        <h1>Roppon Me video</h1>
+      </div>
+      <!-- /header -->
+
+      <div data-role="content" data-theme="d">
+
+      <video id="video" autobuffer height="212" width="270" >
+              <source src="http://home.fareastgadget.com/kendovideo/kata6.mp4">
+              </source>
+          </video>
+      </div>
+      <!-- /content -->
+
+    </div>
+    <!-- /page popup -->
+
+    <!-- Start of 7 page: #nanahon -->
+    <div data-role="page" id="nanahon" data-theme="a">
+
+      <div data-role="header">
+        <h1>Nanahon Me</h1>
+        <a href="kata.html" rel="external" data-icon="home" data-iconpos="notext" data-direction="reverse" data-rel="home"  class="ui-btn-right jqm-home">Home</a>
+      </div>
+      <!-- /header -->
+
+      <div data-role="content" data-theme="a">
+        <h2>Nanahon Me 七本目</h2>
+        <p>
+          Both partners assume chudan kamae. After stepping into the center look
+          for an opportunity to attack.
+        </p>
+        <p>
+          The uchitachi makes a thrust to the shidachi. The shidachi receives
+          this thrust by stepping backwards and pushing the sword forwards and upwards
+          keeping contact between the shinogi of his sword and the uchitachi's.
+        </p>
+        <p>
+          Both partners resume chudan-no-kamae. The Uchitachi makes a large shomen
+          and the shidachi responds with men nuki do moving diagonally forward to
+          the right and finishing the cut on his right knee.
+        </p>
+        <p>
+          After finishing the cut, the shidachi turns to face the uchitachi and,
+          while remaining on one knee, assumes waki-gamae. The Uchitachi turns to
+          face the shidachi and the shidachi moves to chudan-no-kamae by way of
+          jodan.
+        </p>
+        <p>
+          The uchitachi steps backwards drawing the shidachi up to both feet with
+          the right foot forwards in a normal chudan kamae. both parties circle
+          back to their original positions moving clockwise five steps.
+        </p>
+
+        <div data-role="collapsible" >
+          <h3>
+            For the Uchitachi
+
+          </h3>
+          <p>
+            <ul>
+              <li>
+                Go into the center with a strong ki the level is 50-50 with the
+                shidachi.
+              </li>
+              <li>
+                Make the tsuki with a feeling of scraping the shinogi of the shidachi.
+              </li>
+              <li>
+                The cutting edge should be pointed slightly to the left and down
+                when you make the tsuki.
+              </li>
+              <li>Don't let your wrist or arm rise too high during the tsuki. </li>
+              <li>
+                When you return to chudan after the tsuki, the level of the ki should
+                be 50-50 between the Uchitachi and Shidachi.
+              </li>
+              <li>
+                Cut men with a do or die attitude. Throw your life completely away
+                as you cut. Raise your sword as you step forward with the left foot
+                and cut as you step forward with the right foot.
+              </li>
+              <li>
+                Cut straight down. It is easy to accidently cut towards the right.
+              </li>
+              <li>
+                As you complete the cut, you will momentarily lose sight of the
+                Shidachi. Immediately look back to your left rear at the shidachi
+                after you cut finishes.
+              </li>
+              <li>
+                As you complete the cut, your body posture should break slightly.
+              </li>
+              <li>
+                When you turn to face the Shidachi again, pivot on the right foot,
+                first raising the sword to roughly jodan as you turn and then lowering
+                to chudan as you complete the pivot.
+              </li>
+              <li>
+                The shidachi pushes you back as they stand up into chudan. Don't
+                lead the shidachi back.
+              </li>
+            </ul>
+          </p>
+        </div>
+        <div data-role="collapsible" >
+          <h3>
+            For the Shidachi
+
+          </h3>
+          <p>
+            <ul>
+              <li>
+                Receive the tsuki by extending out with the cutting edge turned
+                down to the left.
+              </li>
+              <li>
+                The feeling when receiving the tsuki is almost like ai-tsuki, but
+                don't lift your arms or fists too high. The contact point should be
+                shoulder height when you complete the extension.
+              </li>
+              <li>
+                Receive the tsuki on the shinogi of the mono-uchi. The kissaki should
+                be slightly higher than chudan.
+              </li>
+              <li>Returning to chudan, the level of the ki should be 50-50 </li>
+              <li>
+                The Do should be struck with katsugi waza (sword goes to the left
+                shoulder on your first step.
+              </li>
+              <li>The Do should be struck on your second step. </li>
+              <li>Never lose sight of the Uchitachi. </li>
+              <li>
+                At the completion of the Do (Zanshin), both arms should be extended
+                and the sword is almost pararllel to the ground. Blade should be facing
+                to the right.
+              </li>
+              <li>
+                Make sure you allow enough time to exhibit zanshin completely prior
+                to taking Wake-gamae after the cut. Don't take Wake-gamae immediately.
+              </li>
+              <li>
+                When you go to wake-gamae, your right knee is a fixed point around
+                which that leg pivots so that both feet face the uchitachi.
+              </li>
+              <li>
+                The shidachi moves up to standing chudan first, and the uchidachi
+                simultaneously follows by stepping backwards (shidachi pushes up rather
+                than being pulled).
+              </li>
+            </ul>
+          </p>
+        </div>
+        <p>
+          <a href="#nanahonvideo" data-role="button" data-rel="dialog" data-transition="pop" data-theme="e" >Watch Video</a>
+        </p>
+        <p>
+          <a href="#kata" data-direction="reverse" data-role="button" data-theme="b">Back</a>
+        </p>
+
+      </div>
+      <!-- /content -->
+
+      <div data-role="footer">
+        <h4>&copy; 2012 Far East Gadget.com</h4>
+      </div>
+      <!-- /footer -->
+    </div>
+    <!-- /page nanahon -->
+
+    <!-- Start of nanahon video page: #popup -->
+    <div data-role="page" id="nanahonvideo">
+
+      <div data-role="header" data-theme="e">
+        <h1>Nanahon Me video</h1>
+      </div>
+      <!-- /header -->
+
+      <div data-role="content" data-theme="d">
+
+        <video id="video" autobuffer height="212" width="270" >
+              <source src="http://home.fareastgadget.com/kendovideo/kata7.mp4">
+              </source>
+          </video>
+        </div>
+      <!-- /content -->
+
+    </div>
+    <!-- /page popup -->
+
+    
+    <!-- Start of 8 page: #kippon -->
+    <div data-role="page" id="kippon" data-theme="a">
+
+      <div data-role="header">
+        <h1>Kodachi Ippon Me</h1>
+        <a href="kata.html" rel="external" data-icon="home" data-iconpos="notext" data-direction="reverse" data-rel="home"  class="ui-btn-right jqm-home">Home</a>
+      </div>
+      <!-- /header -->
+
+      <div data-role="content" data-theme="a">
+        <h2>Kodachi Ippon Me 小太刀一本目</h2>
+        <p>
+          The uchitachi takes left Jodan-no-kamae. The shidachi takes hanmi chudan
+          kamae. Both move three large steps forwards.
+        </p>
+        <p>
+          The uchitachi cuts to the shidachi's shomen. The shidachi steps diagonally
+          forward to the right and receives the men using uke-nagashi. The uke-nagashi-waza
+          is completed by striking the uchitachi's shomen.
+        </p>
+        <p>
+          After one beat, the shidachi steps back into right jodan kamae. The
+          uchitachi turns to face the shidachi and both come to chudan-no kamae.
+          The shidachi steps to the left to resume the left/right center.
+        </p>
+
+        <div data-role="collapsible" >
+          <h3>
+            For the Uchitachi
+
+          </h3>
+          <p>
+            <ul>
+              <li>
+                Do not cut down as hard as in tachi Ippon-me. Cut slightly softer
+                so that you do not risk breaking the shidachi's kodachi.
+              </li>
+            </ul>
+          </p>
+        </div>
+        <div data-role="collapsible" >
+          <h3>
+            For the Shidachi
+
+          </h3>
+          <p>
+            <ul>
+              <li>
+                Your kamae in response to the Uchitachi's Jodan should have the
+                point of the sword towards your opponent's eyes. The blade should
+                be vertical, not slanted to the left or right.
+              </li>
+              <li>Hide your left shoulder from the Uchitachi. </li>
+              <li>
+                Make your kamae not a defensive kamae but with offensive spirit
+                and intent.
+              </li>
+              <li>
+                After you cut the men, wait for 1/2 breath before stepping back
+                to Jodan. Do not move back too quickly.
+              </li>
+              <li>
+                In moving to Jodan, it is not necessary to first draw down to the
+                opponent's face (as in e.g. Tachi Gohon-me).
+              </li>
+            </ul>
+          </p>
+        </div>
+        <p>
+          <a href="#kipponvideo" data-role="button" data-rel="dialog" data-transition="pop" data-theme="e" >Watch Video</a>
+        </p>
+        <p>
+          <a href="#kata" data-direction="reverse" data-role="button" data-theme="b">Back</a>
+        </p>
+
+      </div>
+      <!-- /content -->
+
+      <div data-role="footer">
+        <h4>&copy; 2012 Far East Gadget.com</h4>
+      </div>
+      <!-- /footer -->
+    </div>
+    <!-- /page kippon -->
+
+    <!-- Start of gohon video page: #popup -->
+    <div data-role="page" id="kipponvideo">
+
+      <div data-role="header" data-theme="e">
+        <h1>Kodachi Ippon Me video</h1>
+      </div>
+      <!-- /header -->
+
+      <div data-role="content" data-theme="d">
+
+       <video id="video" autobuffer height="212" width="270" >
+              <source src="http://home.fareastgadget.com/kendovideo/kata8.mp4">
+              </source>
+          </video>
+        
+      </div>
+      <!-- /content -->
+
+    </div>
+    <!-- /page popup -->
+
+    <!-- Start of 9 page: #knihon -->
+    <div data-role="page" id="knihon" data-theme="a">
+
+      <div data-role="header">
+        <h1>Kodachi Nihon Me</h1>
+        <a href="kata.html" rel="external" data-icon="home" data-iconpos="notext" data-direction="reverse" data-rel="home"  class="ui-btn-right jqm-home">Home</a>
+      </div>
+      <!-- /header -->
+
+      <div data-role="content" data-theme="a">
+        <h2>Kodachi Nihon Me 小太刀二本目</h2>
+        <p>
+          The uchitachi takes gedan, the shidachi takes hanmi chudan in response.
+          Both move forwards three large steps.
+        </p>
+        <p>
+          The uchitachi attempts to raise towards chudan. The shidachi points
+          the blade slightly to the left to cover. The Uchitachi steps back into
+          Waki-gamae to get out from under the shidachi's cover. Meanwhile, the
+          shidachi steps forwards (irimi) pointing the kamae at the uchitachi's
+          throat (back in the center).
+        </p>
+        <p>
+          The uchitachi moves through Jodan and cuts at the shidachi's shomen.
+          The shidachi moves diagonally to the left and receives the cut using uke-nagashi.
+          The uke-nagashi concludes when the shidachi cuts the uchitachi's shomen.
+        </p>
+        <p>
+          After cutting the shomen, the shidachi reaches out with the left hand
+          and holds the uchitachi's right arm down. Zanshin is exhibited by drawing
+          the kodachi back to the right hip and pointing it at the shidachi's stomach.
+        </p>
+        <p>
+          The shidachi returns to the original position by stepping first with
+          the right foot.
+        </p>
+
+        <div data-role="collapsible" >
+          <h3>
+            For the Uchitachi
+
+          </h3>
+          <p>
+            <ul>
+              <li>
+                The attack to shomen should only lift the sword high enough to see
+                the shidachi under the arms.
+              </li>
+            </ul>
+          </p>
+          </p>
+        </div>
+        <div data-role="collapsible" >
+          <h3>
+            For the Shidachi
+
+          </h3>
+          <p>
+            <ul>
+              <li>
+                The initial kamae points to the opponent's chest with the sword
+                vertical (no slant on the blade).
+              </li>
+              <li>
+                When you cover the opponent's blade as he raises, you do so by pointing
+                the sword to your left and slanting the cutting edge to the right
+                (think of holding down with the bottom part of the shinogi).
+              </li>
+              <li>
+                As you advance to keep the pressure on the Uchitachi after he goes
+                to waki-gamae, your sword goes back to a centered chudan, however
+                the height is now at the throat, not the chest.
+              </li>
+              <li>
+                As you step out to the left, shift your body facing to be square
+                to the opponent. Do not move so that the body facing is away from
+                them at the contact point of the uke-nagashi.
+              </li>
+              <li>
+                The final position of your body should be much less than 45 degrees
+                out from the uchitachi.
+              </li>
+              <li>
+                When you grip the uchitachi's right arm. Grip from the top (thumb
+                pointing down, wrist broken inward). Grip the arm just above the elbow
+                joint, not at the joint. Pressure should be downwards.
+              </li>
+            </ul>
+          </p>
+        </div>
+        <p>
+          <a href="#knihonvideo" data-role="button" data-rel="dialog" data-transition="pop" data-theme="e" >Watch Video</a>
+        </p>
+        <p>
+          <a href="#kata" data-direction="reverse" data-role="button" data-theme="b">Back</a>
+        </p>
+
+      </div>
+      <!-- /content -->
+
+      <div data-role="footer">
+        <h4>&copy; 2012 Far East Gadget.com</h4>
+      </div>
+      <!-- /footer -->
+    </div>
+    <!-- /page knihon -->
+
+    <!-- Start of knihon video page: #popup -->
+    <div data-role="page" id="knihonvideo">
+
+      <div data-role="header" data-theme="e">
+        <h1>Kodachi Nihon Me video</h1>
+      </div>
+      <!-- /header -->
+
+      <div data-role="content" data-theme="d">
+
+        <video id="video" autobuffer height="212" width="270" >
+              <source src="http://home.fareastgadget.com/kendovideo/kata9.mp4">
+              </source>
+          </video>
+        
+      </div>
+      <!-- /content -->
+
+    </div>
+    <!-- /page popup -->
+
+    <!-- Start of 10 page: #ksanbon -->
+    <div data-role="page" id="ksanbon" data-theme="a">
+
+      <div data-role="header">
+        <h1>Kodachi Sanbon Me</h1>
+        <a href="kata.html" rel="external" data-icon="home" data-iconpos="notext" data-direction="reverse" data-rel="home"  class="ui-btn-right jqm-home">Home</a>
+      </div>
+      <!-- /header -->
+
+      <div data-role="content" data-theme="a">
+        <h2>Kodachi Sanbon Me 小太刀三本目</h2>
+        <p>
+          The Uchitachi remains in chudan no-kamae. The shidachi, however moves
+          to hanmi-gedan. Both sides take three steps into the center.
+        </p>
+        <p>
+          During the third step, the uchitachi attempts to strike the shidachi's
+          shomen. The shidachi responds with suri-age followed by suri-otoshi. Sliding
+          up the Uchitachi's blade and then throwing it back towards the Uchitachi's
+          right rear side. This breaks the balance and posture of the uchitachi.
+        </p>
+        <p>
+          The uchitachi recovers balance and stepping forward with the left foot
+          cuts to the shidachi's do. This cut is received with suri-otoshi, sliding
+          down and backwards along most of the blade as the shidachi steps out to
+          the left by pivoting on the right foot. The suri-otoshi is completed by
+          sliding the kodachi upwards until the two swords are locked at the tsuba
+          (during both slides the shinogi are in contact, however at the point when
+          the swords lock tsuba, the shidachi turns the kodachi blade down).
+        </p>
+        <p>
+          The shidachi grips the uchitachi's right arm locking it in place. The
+          uchitachi attempts to escape two or three steps backwards but the shidachi
+          follows up maintaining this control. The shidachi exhibits zanshin by
+          drawing the kodachi to his right hip and pointing it towards the uchitachi's
+          stomach.
+        </p>
+        <p>
+          The shidachi withdraws back to the original starting position beginning
+          with the left leg this time (about 3 steps left right left). The uchitachi
+          returns to the starting position with a single step (right and left recovery).
+        </p>
+
+        <div data-role="collapsible" >
+          <h3>
+            For the Uchitachi
+
+          </h3>
+          <p>
+            <ul>
+              <li>
+                When the shidachi goes into hanmi gedan, do not adjust your kamae
+                downward at all.
+              </li>
+              <li>
+                Do not swing the sword up during step two. Instead get both the
+                up and downswing in during the third step.
+              </li>
+              <li>
+                Hit the do slightly higher than normally. This makes the shidachi's
+                suri-otoshi somewhat easier. Do not hit the do low.
+              </li>
+              <li>You can retreat either two or three steps. </li>
+              <li>
+                Remember to return to the center after the zanshin is exhibited
+                leading with your right foot. You will move only one step back (with
+                the shidachi's 3'd step) to get to the center.
+              </li>
+            </ul>
+          </p>
+        </div>
+        <div data-role="collapsible" >
+          <h3>
+            For the Shidachi
+
+          </h3>
+          <p>
+            <ul>
+              <li>
+                The first suri-age/suri-otoshi, Don't raise your right arm above
+                horizontal (shoulder height). You will need to break your wrist upwards
+                to reach the Uchitachi's sword.
+              </li>
+              <li>
+                In the first suri-age/suri-otoshi, catch the uchitachi's sword at
+                your datotsu-bu. Do not catch it too close to his point, but more
+                down at the bottom of the datotsu-bu or even further towards his tsuba.
+              </li>
+              <li>
+                Finish the first suri-otoshi with the point of the kodachi outside
+                the frame of the uchitachi's body. The "throw" should be back towards
+                the uchitachi more than to your left (his right).
+              </li>
+              <li>
+                When you grip the Uchitachi's arm, grip slightly above the elbow
+                joint and from the right side (thumb on top, pointing to your right).
+                The lock is accomplished by pressure towards the inside with your
+                left arm to his right arm, while at the same time pressing the katana
+                downwards with the kodachi.
+              </li>
+              <li>The chase can be either two or three steps. </li>
+              <li>
+                Remember to withdraw back to the center by stepping first with your
+                left foot not your right foot. You will move three steps back to get
+                to the center.
+              </li>
+            </ul>
+          </p>
+        </div>
+        <p>
+          <a href="#ksanbonvideo" data-role="button" data-rel="dialog" data-transition="pop" data-theme="e" >Watch Video</a>
+        </p>
+        <p>
+          <a href="#kata" data-direction="reverse" data-role="button" data-theme="b">Back</a>
+        </p>
+
+      </div>
+      <!-- /content -->
+
+      <div data-role="footer">
+        <h4>&copy; 2012 Far East Gadget.com</h4>
+      </div>
+      <!-- /footer -->
+    </div>
+    <!-- /page ksanbon -->
+
+    <!-- Start of ksanbon video page: #popup -->
+    <div data-role="page" id="ksanbonvideo">
+
+      <div data-role="header" data-theme="e">
+        <h1>Kodachi Sanbon Me video</h1>
+      </div>
+      <!-- /header -->
+
+      <div data-role="content" data-theme="d">
+
+        <video id="video" autobuffer height="212" width="270" >
+              <source src="http://home.fareastgadget.com/kendovideo/kata10.mp4">
+              </source>
+          </video>
+        </div>
+      <!-- /content -->
+
+    </div>
+    <!-- /page popup -->
+
+  </body>
+
+</html>

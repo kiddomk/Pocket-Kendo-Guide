@@ -1,0 +1,5 @@
+.nav-custom-icon .ui-btn .ui-btn-inner { padding-top: 40px !important; }
+		.nav-custom-icon .ui-btn .ui-icon { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
+		#kendonavbar .ui-icon { background:  url(../images/ken.png) 50% 50% no-repeat; background-size: 30px 25px; }
+		#katanavbar .ui-icon { background:  url(../images/kata.png) 50% 50% no-repeat; background-size: 30px 25px;  }
+		#optionnavbar .ui-icon { background:  url(../images/gear.png) 50% 50% no-repeat;  background-size: 25px 25px; }

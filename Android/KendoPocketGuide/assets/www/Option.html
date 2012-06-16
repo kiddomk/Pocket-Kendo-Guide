@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Option</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+    <meta charset="utf-8" />
+
+
+    <!-- iPad/iPhone specific css below, add after your main css >
+	<link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="ipad.css" type="text/css" />		
+	<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css" type="text/css" />		
+	-->
+    <!-- If your application is targeting iOS BEFORE 4.0 you MUST put json2.js from http://www.JSON.org/json2.js into your www directory and include it here -->
+
+    <link rel="stylesheet" href="scripts/jquery.mobile-1.0.min.css" />
+    <link href="scripts/custom-icon.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="scripts/jquery-1.7.1.min.js" ></script>
+    <script type="text/javascript" src="scripts/jquery.mobile-1.0.min.js" ></script>
+    <script type="text/javascript" charset="utf-8" src="scripts/phonegap-1.3.0.js"></script>
+    
+   <script src='http://connect.facebook.net/en_US/all.js'></script>
+   
+    <script type="text/javascript">
+      $(':jqmData(url^=option)').live('pagebeforecreate',
+      function(event) {
+      $(this).filter(':jqmData(url*=ui-page)').find(':jqmData(role=header)')
+      .prepend('<a href="#" data-rel="back" data-icon="back">Back</a>')
+      });
+      </script>
+      
+
+
+  </head>
+  <body>
+
+    <div data-role="page" id="option" >
+
+      <div data-role="header" data-theme="b" >
+        <h1>Option</h1>
+
+      </div>
+      <!-- /header -->
+
+      <div data-role="content">
+        
+
+
+        <ul data-role="listview">
+          <li>
+            <img src="images/share.png"  alt="Send Feedback" class="ui-li-icon" />
+            <h3>Share this App</h3>
+            <p>with your friends &amp; families</p>
+
+            <ul>
+
+          <li>
+        
+                <a href="https://www.facebook.com/dialog/feed?
+  app_id=311553065547495&
+  link=http://tinyurl.com/7raska6&
+  picture=https://fbcdn-photos-a.akamaihd.net/photos-ak-snc1/v85006/135/311553065547495/app_1_311553065547495_490.gif&
+  name=Kendo%20Pocket%20Guide&
+  caption=Pocket%20Reference&
+  description=Reference%20to%20Kendo%20Waza%20and%20Kata%20by%20J.SEKI.&
+  message=Please%20download%20Kendo%20Pocket%20Guide!&
+  redirect_uri=http://home.fareastgadget.com" >
+                  <img src="images/fb.png"  alt="Facebook" class="ui-li-icon" />Facebook
+                </a>
+              </li>
+               <!--   <li>
+                <a href="#">
+                  <img src="images/twitter.png"  alt="Twitter" class="ui-li-icon" />Twitter
+                </a>
+              </li>-->
+              <li>
+                <a href="mailto:?to=&subject=Get%20Kendo%20Pocket%20Guide%20app%20for%20iphone&body=Have%20you%20got%20Pocket%20Kendo%20Guide%20which%20you%20can%20look%20up%20Kendo%20Waza%20and%20Kata%20at%20anytime%20anywhere%20from%20the%20App%20Store." >
+                  <img src="images/email.png" alt="Email" class="ui-li-icon" />Email
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+     
+           <a href="mailto:feedback@fareastgadget.com?&subject=Provide%20feedback&body=I%20find%20it%20very%20useful" >
+
+              <img src="images/usericon.png"  alt="Send Feedback" class="ui-li-icon" />
+              <h3>Send Feedback</h3>
+              <p>Suggestions,Love, Anything...</p>
+
+            </a>
+          </li>
+          <li>
+            <a href="http://tinyurl.com/7raska6">
+
+              <img src="images/star24.png"  alt="report issues" class="ui-li-icon" />
+              <h3>Rate This App</h3>
+              <p>Your positive comments would encourage me to write better apps</p>
+
+            </a>
+          </li>
+
+
+          <li>
+            <a href="#AboutUs">
+              <img src="images/info.png" alt="About us" class="ui-li-icon" />
+              <h3>About Us</h3>
+              <p>Far East Gadget.com by j.seki</p>
+            </a>
+
+          </li>
+
+
+        </ul>
+      </div>
+      <!-- /content -->
+
+
+      <div data-role="footer" data-id="navbar" class="nav-custom-icon" data-position="fixed">
+        <div data-role="navbar" class="nav-custom-icon" data-grid="b">
+          <ul>
+            <li>
+              <a href="index.html" rel="external" data-prefetch="true" id="kendonavbar" data-icon="custom" >Kendo</a>
+            </li>
+            <li>
+              <a href="kata.html" rel="external" data-prefetch="true" id="katanavbar" data-icon="custom">Kata</a>
+            </li>
+            <li>
+              <a href="Option.html" rel="external" data-prefetch="true" id="optionnavbar" data-icon="custom" class="ui-btn-active ui-state-persist">Option</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+
+
+      <!-- /footer -->
+
+    </div>
+    <!-- /page -->
+
+    <!-- Start of 1 page: #AboutUs -->
+    <div data-role="page" id="AboutUs" data-theme="a">
+
+      <div data-role="header">
+        <h1>About Us</h1>
+        <a href="#" data-rel="back" data-icon="back">Back</a>
+      </div>
+      <!-- /header -->
+
+      <div data-role="content" data-theme="a">
+        <h2>About Us</h2>
+        <p>
+          Kendo Pocket Guide is developed by Jun Seki using JQuery Mobile &amp; PhoneGap. It provides reference to Kendo waza and kata.
+         </p>
+        <p> More apps from FarEastGadget.com will be coming soon.</p>
+        <p>
+          <a href="http://home.fareastgadget.com" rel="external">
+            <strong>FarEastGadget.com</strong>
+          </a>  is founded by Jun Seki, who is an tech entrepreneur and .NET/Web developer.
+        </p>
+        <p>
+          <a href="http://home.fareastgadget.com" rel="external">
+            <strong>FarEastGadget.com</strong>
+          </a> is a tech startup company which provides the latest mobile apps and digital gadgets from far east (Greater China, Japan, Korea) area.
+          The platform also exchanges information &amp; ideas between European nations and Asian countries.
+          Based in London where the company gains access to a vast range of enrepreneurship events and supports.
+        </p>
+
+
+
+      </div>
+      <!-- /content -->
+
+      <div data-role="footer">
+        <h4>&copy; 2012 Far East Gadget.com</h4>
+      </div>
+      <!-- /footer -->
+    </div>
+    <!-- /page AboutUs -->
+
+  </body>
+
+</html>

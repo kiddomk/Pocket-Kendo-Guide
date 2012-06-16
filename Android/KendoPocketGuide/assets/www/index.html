@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kendo Waza</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+    <meta charset="utf-8" />
+
+
+    <!-- iPad/iPhone specific css below, add after your main css >
+	<link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="ipad.css" type="text/css" />		
+	<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css" type="text/css" />		
+	-->
+    <!-- If your application is targeting iOS BEFORE 4.0 you MUST put json2.js from http://www.JSON.org/json2.js into your www directory and include it here -->
+
+    <link rel="stylesheet" href="scripts/jquery.mobile-1.0.min.css" />
+    <link href="scripts/custom-icon.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="scripts/jquery-1.7.1.min.js" ></script>
+    <script type="text/javascript" src="scripts/jquery.mobile-1.0.min.js" ></script>
+    <script type="text/javascript" charset="utf-8" src="scripts/phonegap-1.3.0.js"></script>
+
+  
+  </head>
+  <body>
+
+    <div data-role="page">
+
+      <div data-role="header" data-theme="b" >
+        <h1>Kendo Waza</h1>
+
+      </div>
+      <!-- /header -->
+
+      <div data-role="content">
+
+
+        <h1>Kendo Kyohon</h1>
+        <h4>by Takano Sasaburo, translated by Kent Enfield</h4>
+
+        <div data-role="collapsible" data-collapsed="false">
+          <h3>50 Varieties of Technique</h3>
+
+
+
+          <p>
+            In kendo, having a certain one or two favorite techniques at which you are proficient is advantageous, but it is not
+
+            good to be biased toward your favorite techniques, without any variety or being skilled at other techniques.
+          </p>
+          <p>
+            You
+
+            must master many techniques, so that they can be used skillfully to respond to the situation. The 50 most basic
+
+            yet typically easy to use techniques are listed below. You should gradually try these techniques and work to
+
+            master them.
+          </p>
+        </div>
+        <div data-role="collapsible" >
+          <h3>
+            技法五十種
+
+          </h3>
+          <p>
+            劍道では、或一二の特に熟練した得意の技を持つてゐることは、頗る有利なものであるが、得意な技に
+
+            偏して、技に變化がなかつたり、他の技に不熟練なのは宜しくない。種々なる技法に習熟して、場合に應
+
+            じて巧みに之を用ふるやうにしなければならぬ。次に最も基本的で、且普通に應用し得る技五十種を擧
+
+            げる。漸次是等の技法を試み、之を習熟するやうに努むべきである。
+          </p>
+        </div>
+
+        <ul id="waza" data-role="listview" data-inset="true">
+          <li>
+            <a href="MenWaza.html" rel="external" data-prefetch="true">Men (面) Waza</a>
+          </li>
+          <li>
+            <a href="KoteWaza.html" rel="external" data-prefetch="true">Kote (籠手) Waza</a>
+          </li>
+          <li>
+            <a href="DoWaza.html" rel="external" data-prefetch="true">Do (胴) Waza</a>
+          </li>
+          <li>
+            <a href="TsukiWaza.html" rel="external" data-prefetch="true">Tsuki (突) Waza</a>
+          </li>
+          <li>
+            <a href="Tsubazeriai.html" rel="external" data-prefetch="true">Tsubazeriai (鍔糶合)</a>
+          </li>
+          <li>
+            <a href="Taiatari.html" rel="external" data-prefetch="true">Taiatari (體當り)</a>
+          </li>
+
+        </ul>
+
+
+
+      </div>
+      <!-- /content -->
+      
+	
+	<div data-role="footer" data-id="navbar" class="nav-custom-icon" data-position="fixed">
+		<div data-role="navbar" class="nav-custom-icon" data-grid="b">
+		<ul>
+			<li><a href="index.html" rel="external" data-prefetch="true" id="kendonavbar" data-icon="custom" class="ui-btn-active ui-state-persist">Kendo</a></li>
+			<li><a href="kata.html" rel="external" data-prefetch="true" id="katanavbar" data-icon="custom">Kata</a></li>
+			<li><a href="Option.html" rel="external" data-prefetch="true" id="optionnavbar" data-icon="custom">Option</a></li>
+			
+		</ul>
+		</div>
+	</div>
+    
+    
+    
+      <!-- /footer -->
+
+    </div>
+    <!-- /page -->
+  </body>
+
+</html>
